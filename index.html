@@ -8,24 +8,31 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <form action="" method="post" class="formContainer">
-            <h2>Login</h2>
-            <div class="emailContainer">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="email" placeholder="Enter Email" required>
-            </div>
-            <div class="passwordContainer">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" class="password" placeholder="Enter Password" required minlength="8">
-            </div>
-            <div class="forgotPassword">
-                <a href="#" class="passwordLink">Forgot Password</a>
-            </div>
-            <div class="buttonContainer">
-                <button type="submit" id="submitBtn" class="submitBtn">Login</button>
-            </div>
+    <div class="panelOne">
+        <form action="" method="post" class="signInForm">
+            <input type="email" name="emailSI" id="emailSI" placeholder="Email">
+            <input type="password" name="passwordSI" id="passwordSI" placeholder="Password">
+            <a href="">Forgot Password?</a>
+            <button type="submit">Sing In</button>
         </form>
+        <form action="" method="post" class="signUpForm">
+            <input type="text" name="firstName" id="firstName" class="firstName" placeholder="First Name">
+            <input type="text" name="lastName" id="lastName" class="lastName" placeholder="Last Name">
+            <input type="email" name="email" id="email" class="email" placeholder="Email">
+            <input type="password" name="password" id="password" class="password" placeholder="Password">
+            <input type="password" name="passwordVerification" id="passwordVerification" class="passwordVerification" placeholder="Verify Password">
+            <button type="submit">Sing Up</button>
+        </form>
+    </div>
+    <div class="panelTwo">
+        <div class="signUpButtonContainer">
+            <p>Create an Account</p>
+            <button type="button">Sign Up</button>
+        </div>
+        <div class="signInButtonContainer">
+            <p>Welcome Back</p>
+            <button type="button">Sign In</button>
+        </div>
     </div>
 </body>
 </html>

@@ -1,49 +1,66 @@
-.container {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.panelOne {
+    position: absolute;
+    right: 0;
+    width: 55vw;
+    height: 100vh;
+    border: solid 1px black;
+}
+
+.signInForm {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.signUpForm {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.panelTwo {
+    left: 0;
+    position: absolute;
+    border: solid 1px blue;
+    width: 45vw;
     height: 100vh;
 }
 
-.formContainer {
+.signUpButtonContainer{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    border: solid 1px #000;
-    width: 40%;
-    height: 80%;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-label {
-    display: block;
+.signInButtonContainer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-input {
-    border: none;
-    background-color: lightgrey;
-    height: 50px;
-    width: 30vw;
-    border-radius: 10px;
-    margin: 5px 0;
-    padding-left: 10px;
-}
 
-input:focus {
-    outline: none;
-}
 
-.submitBtn {
-    margin-top: 15px;
-    height: 50px;
-    width: 31vw;
-    border-radius: 10px;
-    border: none;
-    background-color: lightgray;
-    cursor: pointer;
-}
 
-.submitBtn:active {
-    border: solid 1px #000;
-}
+
