@@ -1,12 +1,16 @@
 :root {
-    --color-one: pink;
-    --color-two: lightblue; 
+    --color-one: #BEA6CE;
+    --color-two: #BBBB91; 
+    --color-three: #8FADC5;
+    --color-four: #431519;
+    --color-five: #BEA6CE;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .panelOne {
@@ -55,10 +59,11 @@ button {
     width: 15%;
     height: 5%;
     margin-top: 2%;
-    border: solid 1px black;
+    border: solid 1px var(--color-four);
     background-color: transparent;
     cursor: pointer;
     border-radius: 20px;
+    color: var(--color-four);
 }
 
 button:hover {
@@ -67,12 +72,13 @@ button:hover {
 }
 
 .forgotPassword {
-    color: black;
+    color: var(--color-four);
     text-decoration: none;
 }
 
 h1 {
     margin-bottom: 5%;
+    color: var(--color-four);
 }
 
 input:focus {
@@ -80,7 +86,7 @@ input:focus {
 }
 
 ::placeholder {
-    color: black;
+    color: var(--color-four);
 }
 
 .signUpForm {
@@ -113,6 +119,43 @@ input:focus {
     background-color: var(--color-two);
     transition: transform 1s ease-in-out;
     transform: translateX(0);
+}
+
+.panelThree {
+    position: absolute;
+    width: 45vw;
+    height: 100vh;
+    transition: transform 1s ease-in-out;
+    transform: translateX(-45vw);
+    background-color: var(--color-two);
+}
+
+.shiftPanelThree {
+    position: absolute;
+    width: 45vw;
+    height: 100vh;
+    transition: transform 1s ease-in-out;
+    transform: translateX(0);
+    background-color: var(--color-two);
+}
+
+.panelFour {
+    position: absolute;
+    width: 45vw;
+    height: 100vh;
+    transition: transform 1s ease-in-out;
+    transform: translateX(55vw);
+    background-color: var(--color-two);
+
+}
+
+.shiftPanelFour {
+    position: absolute;
+    width: 45vw;
+    height: 100vh;
+    transition: transform 1s ease-in-out;
+    transform: translateX(100vw);
+    background-color: var(--color-two);
 }
 
 .createAccountContainer{
