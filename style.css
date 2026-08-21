@@ -6,6 +6,14 @@
 
 .panelOne {
     position: absolute;
+    left: 0;
+    width: 55vw;
+    height: 100vh;
+    border: solid 1px black;
+}
+
+.shiftPanelOne {
+    position: absolute;
     right: 0;
     width: 55vw;
     height: 100vh;
@@ -23,7 +31,7 @@
 }
 
 .signUpForm {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
@@ -33,14 +41,22 @@
 }
 
 .panelTwo {
-    left: 0;
+    right: 0;
     position: absolute;
     border: solid 1px blue;
     width: 45vw;
     height: 100vh;
 }
 
-.signUpButtonContainer{
+.shiftPanelTwo {
+    left: 0px;
+    position: absolute;
+    border: solid 1px blue;
+    width: 45vw;
+    height: 100vh;
+}
+
+.createAccountContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,8 +66,8 @@
     height: 100%;
 }
 
-.signInButtonContainer {
-    display: none;
+.alreadyHaveAccountContainer {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -59,6 +75,11 @@
     width: 100%;
     height: 100%;
 }
+
+.hidden {
+    display: none;
+}
+
 
 
 

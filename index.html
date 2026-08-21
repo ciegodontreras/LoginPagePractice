@@ -8,14 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="panelOne">
-        <form action="" method="post" class="signInForm">
+    <div class="panelOne" id="panelOne">
+        <form action="" method="post" class="signInForm" id="signInForm">
             <input type="email" name="emailSI" id="emailSI" placeholder="Email">
             <input type="password" name="passwordSI" id="passwordSI" placeholder="Password">
             <a href="">Forgot Password?</a>
             <button type="submit">Sing In</button>
         </form>
-        <form action="" method="post" class="signUpForm">
+        <form action="" method="post" class="signUpForm hidden" id="signUpForm">
             <input type="text" name="firstName" id="firstName" class="firstName" placeholder="First Name">
             <input type="text" name="lastName" id="lastName" class="lastName" placeholder="Last Name">
             <input type="email" name="email" id="email" class="email" placeholder="Email">
@@ -24,14 +24,14 @@
             <button type="submit">Sing Up</button>
         </form>
     </div>
-    <div class="panelTwo">
-        <div class="signUpButtonContainer">
+    <div class="panelTwo" id="panelTwo">
+        <div class="createAccountContainer" id="createAccountContainer">
             <p>Create an Account</p>
-            <button type="button">Sign Up</button>
+            <button type="button" id="createAccountBtn">Sign Up</button>
         </div>
-        <div class="signInButtonContainer">
+        <div class="alreadyHaveAccountContainer hidden" id="alreadyHaveAccountContainer">
             <p>Welcome Back</p>
-            <button type="button">Sign In</button>
+            <button type="button" id="alreadyHaveAccountBtn">Sign In</button>
         </div>
     </div>
 </body>
